@@ -1,3 +1,21 @@
+/*
+
+=====================================================================
+Stored Procedure: Load Bronze Layer (Source -> Bronze)
+=====================================================================
+Script Purpose:
+	This stored procedure loads data into the 'bronze' schema from external csv file.
+	It performs the following actions:
+	- Truncate the bronze tables before loading data
+	- Uses the 'BULK INSERT' commmand to load data from csv Files to bronze tables.
+
+Parameters:
+	None.
+  This stored procedure does not accept any parameters or return any values.
+
+Usage Example:
+	EXEC br
+*/
 -- GO is used to separate SQL batches in SSMS (SQL Server Management Studio)
 GO
 
