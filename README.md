@@ -1,78 +1,85 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Hi! 👋  
+Welcome to my **Data Warehouse and Analytics Project** repository.  
+This project is part of my journey to deepen my skills in data engineering and analytics.  
+From building a modern data warehouse to creating meaningful insights, this project showcases my ability to handle data across the full pipeline—from raw ingestion to reporting.
 
 ---
+
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+I designed the data architecture based on the **Medallion Architecture** — which separates data into **Bronze**, **Silver**, and **Gold** layers for clarity, quality, and performance:
+
 ![Data Architecture](docs/data_architecture.png)
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+- **Bronze Layer**: Raw data ingestion from ERP and CRM CSV files into SQL Server.
+- **Silver Layer**: Cleaned and standardized data, prepped for analytics.
+- **Gold Layer**: Final business-ready tables modeled into a star schema, optimized for BI and reporting.
 
 ---
+
 ## 📖 Project Overview
 
-This project involves:
+Here’s what I did in this project:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+1. **Architected the Data Pipeline** using Medallion Layering  
+2. **Built ETL Pipelines** to extract, transform, and load data from flat files to a SQL Server database  
+3. **Designed a Star Schema** with fact and dimension tables  
+4. **Created SQL-based Analytics and Dashboards** to generate actionable insights  
 
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development
-- Data Architect
-- Data Engineering  
-- ETL Pipeline Developer  
+This project helped me strengthen my practical knowledge in:
+
+- SQL Development  
+- Data Warehousing  
+- ETL and Data Pipeline Design  
 - Data Modeling  
-- Data Analytics  
+- Data Analytics and Reporting  
 
 ---
 
-## 🛠️ Important Links & Tools:
+## 🛠️ Tools & Resources I Used
 
-Everything is for Free!
-- **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion](https://www.notion.com/templates/sql-data-warehouse-project):** Get the Project Template from Notion
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
+All tools and resources in this project are free and open source:
 
----
-
-## 🚀 Project Requirements
-
-### Building the Data Warehouse (Data Engineering)
-
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+- **[Datasets](datasets/)**: Source data in CSV format  
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)**  
+- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)**  
+- **[DrawIO](https://www.drawio.com/)**: For designing architecture and data flow diagrams  
+- **[Notion Project Template](https://www.notion.com/templates/sql-data-warehouse-project)**  
+- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4)**  
+- **Git & GitHub**: For version control and collaboration  
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+## 🚀 Project Goals & Requirements
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+### 1. Data Engineering – Building the Data Warehouse
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+**Goal**: Consolidate data from multiple systems into a clean, scalable SQL Server warehouse.
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
+**Key Tasks**:
+- Import ERP and CRM data from CSV files  
+- Cleanse and standardize data  
+- Resolve duplicates and quality issues  
+- Integrate everything into a unified, analytics-friendly model  
+- Focused on the most recent data only (no historical tracking)  
+
+---
+
+### 2. Data Analysis – BI & Reporting
+
+**Goal**: Use SQL to extract insights that help drive business decisions.
+
+**Key Insights Generated**:
+- Customer purchase patterns and segmentation  
+- Product performance analysis  
+- Sales trends over time  
+
+These reports are designed to support decision-making across marketing, sales, and product teams.  
+More details available in [docs/requirements.md](docs/requirements.md).
+
+---
 
 ## 📂 Repository Structure
 ```
@@ -99,3 +106,14 @@ data-warehouse-project/
 ├── LICENSE                             # License information for the repository
 ├── .gitignore                          # Files and directories to be ignored by Git
 └── requirements.txt                    # Dependencies and requirements for the project
+```
+
+
+---
+
+## 📧 Contact Me
+
+- **GitHub**: [https://github.com/Firas-Faisal](https://github.com/Firas-Faisal)  
+- **LinkedIn**: [https://linkedin.com/in/ahmad-firas04](https://linkedin.com/in/ahmad-firas04)  
+- **Portfolio**: [https://firas-faisal.github.io/](https://firas-faisal.github.io/)  
+- **Email**: ahmadfiras.faisal@gmail.com
