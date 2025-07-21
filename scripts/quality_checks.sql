@@ -8,10 +8,9 @@ HAVING COUNT(*) > 1 OR sls_ord_num IS NULL;
 
 -- Check for unwanted Spaces
 -- Expectation: No Result
-SELECT prd_nm
-FROM silver.crm_prd_info
-WHERE prd_nm != TRIM(prd_nm)
-
+SELECT *
+FROM bronze.erp_px_cat_g1v2
+WHERE cat != TRIM(cat) OR subcat != TRIM(subcat) OR maintenance != TRIM(maintenance);
 -- Check for Nulls or Negative Numbers
 -- Expectation: No Result
 SELECT prd_cost
@@ -19,8 +18,11 @@ FROM silver.crm_prd_info
 WHERE prd_cost < 0 OR prd_cost IS NULL;
 
 -- Data Standardization & Consistency
-SELECT DISTINCT prd_line
-FROM silver.crm_prd_info
+SELECT DISTINCT 
+maintenance
+FROM bronze.erp_px_cat_g1v2
+
+
 
 -- Check For invalid date order
 SELECT *
@@ -64,3 +66,19 @@ ORDER BY sls_sales,sls_quantity,sls_price;
 
 SELECT *
 FROM silver.crm_sales_details
+
+-- Check the Data Type 
+SELECT COLUMN_NAME, DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'erp_cust_az12'
+  AND TABLE_SCHEMA = 'bronze'
+  AND COLUMN_NAME IN ('cid', 'bdate', 'gen');
+
+-- Identify Out-of-Range Dates
+
+SELECT DISTINCT bdate
+FROM silver.erp_cust_az12
+WHERE bdate < '1924-01-01' OR bdate > GETDATE();
+
+SELECT *
+FROM silver.erp_cust_az12;
