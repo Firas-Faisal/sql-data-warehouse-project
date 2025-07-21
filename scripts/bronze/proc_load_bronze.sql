@@ -14,14 +14,15 @@ Parameters:
   This stored procedure does not accept any parameters or return any values.
 
 Usage Example:
-	EXEC br
+	EXEC bronze.load_bronze;
+=====================================================================
 */
 -- GO is used to separate SQL batches in SSMS (SQL Server Management Studio)
 GO
 
 /* 
 CREATE OR ALTER will create the stored procedure if it doesn't exist, 
-or update it if it does — without needing a DROP PROCEDURE.
+or update it if it does ï¿½ without needing a DROP PROCEDURE.
 */
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
