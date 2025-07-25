@@ -46,8 +46,6 @@ All tools and resources in this project are free and open source:
 - **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)**  
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)**  
 - **[DrawIO](https://www.drawio.com/)**: For designing architecture and data flow diagrams  
-- **[Notion Project Template](https://www.notion.com/templates/sql-data-warehouse-project)**  
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4)**  
 - **Git & GitHub**: For version control and collaboration  
 
 ---
