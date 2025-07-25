@@ -76,8 +76,6 @@ All tools and resources in this project are free and open source:
 - Product performance analysis  
 - Sales trends over time  
 
-These reports are designed to support decision-making across marketing, sales, and product teams.  
-More details available in [docs/requirements.md](docs/requirements.md).
 
 ---
 
