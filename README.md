@@ -1,7 +1,7 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse Project
 
 Hi! 👋  
-Welcome to my **Data Warehouse and Analytics Project** repository.  
+Welcome to my **Data Warehouse Project** repository.  
 This project is part of my journey to deepen my skills in data engineering and analytics.  
 From building a modern data warehouse to creating meaningful insights, this project showcases my ability to handle data across the full pipeline—from raw ingestion to reporting.
 
